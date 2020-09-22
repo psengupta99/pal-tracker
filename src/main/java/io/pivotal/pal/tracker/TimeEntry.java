@@ -7,7 +7,13 @@ public class TimeEntry {
     private long projectId;
     private long userId;
     private LocalDate date;
+
+    public TimeEntry() {
+    }
+
     private int hours;
+
+
 
     public TimeEntry(long projectId, long userId, LocalDate date, int hours) {
         this.projectId = projectId;

@@ -1,6 +1,8 @@
 package io.pivotal.pal.tracker;
 
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import java.util.List;
 
 public class TimeEntryController {
 
@@ -15,6 +17,9 @@ public class TimeEntryController {
         return null;
     }
 
+    public ResponseEntity<List<TimeEntry>> list() {
+        return null;
+    }
     public ResponseEntity update(long timeEntryId, TimeEntry expected) {
         return null;
     }
