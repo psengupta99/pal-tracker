@@ -1,7 +1,19 @@
 package io.pivotal.pal.tracker;
 
-public class InMemoryTimeEntryRepository {
+import java.util.List;
+
+public class InMemoryTimeEntryRepository  implements TimeEntryRepository{
     public TimeEntry create(TimeEntry timeEntry) {
+        return null;
+    }
+
+    @Override
+    public TimeEntry find(Long id) {
+        return null;
+    }
+
+    @Override
+    public List<TimeEntry> list() {
         return null;
     }
 
@@ -16,6 +28,13 @@ public class InMemoryTimeEntryRepository {
     public void delete(long id) {
     }
 
-    public void list() {
+    @Override
+    public TimeEntry update(Long id, TimeEntry timeEntry) {
+        return null;
+    }
+
+    @Override
+    public void delete(Long id) {
+
     }
 }
